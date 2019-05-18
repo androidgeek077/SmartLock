@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "516524676935",
+    "firebase_url": "https://smartlock-95021.firebaseio.com",
+    "project_id": "smartlock-95021",
+    "storage_bucket": "smartlock-95021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516524676935:android:e3d8ccc27957fe8e",
+        "android_client_info": {
+          "package_name": "app.techsol.smartlock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516524676935-5pauaovnln7vm3ca8vsc1k65ri2am0se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE3pEZT2WFWLPHr2Eq5RNQhFdOciI7wjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516524676935-5pauaovnln7vm3ca8vsc1k65ri2am0se.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -47,17 +47,18 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:drawablePadding="10dp"
+                        android:id="@+id/UserNameET"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
+                        android:autofillHints="Waqas Ahmad"
+                        android:drawableStart="@drawable/ic_man_user"
                         android:drawableLeft="@drawable/ic_man_user"
+                        android:drawablePadding="10dp"
                         android:hint="@string/user_name"
                         android:inputType="text"
-                        android:textColor="#000"
-                        android:drawableStart="@drawable/ic_man_user"
-                        android:autofillHints="Waqas Ahmad" />
+                        android:textColor="#000" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -67,16 +68,17 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:drawablePadding="10dp"
+                        android:id="@+id/EmailET"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/email"
-                        android:hint="@string/email"
-                        android:inputType="textEmailAddress"
                         android:autofillHints="example@gmail.com"
-                        android:drawableStart="@drawable/email" />
+                        android:drawableStart="@drawable/email"
+                        android:drawableLeft="@drawable/email"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -85,17 +87,18 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:drawablePadding="10dp"
+                        android:id="@+id/PasswordET"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/lock"
-                        android:hint="@string/password"
-                        android:inputType="textPassword"
+                        android:autofillHints="@string/password"
                         android:drawableStart="@drawable/lock"
-                        android:autofillHints="@string/password" />
+                        android:drawableLeft="@drawable/lock"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/password"
+                        android:inputType="textPassword" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -104,16 +107,17 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:drawablePadding="10dp"
+                        android:id="@+id/CPasswordET"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/ic_show_password"
-                        android:hint="@string/confirm_password"
-                        android:inputType="textPassword"
+                        android:autofillHints="@string/password"
                         android:drawableStart="@drawable/ic_show_password"
-                        android:autofillHints="@string/password" />
+                        android:drawableLeft="@drawable/ic_show_password"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/confirm_password"
+                        android:inputType="textPassword" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -123,17 +127,18 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:drawablePadding="10dp"
+                        android:id="@+id/ProductKeyET"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/ic_barcode_tag"
-                        android:hint="@string/product_key"
-                        android:inputType="text"
                         android:autofillHints="165n4534vtum3"
-                        android:drawableStart="@drawable/ic_barcode_tag" />
+                        android:drawableStart="@drawable/ic_barcode_tag"
+                        android:drawableLeft="@drawable/ic_barcode_tag"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/product_key"
+                        android:inputType="text" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -143,18 +148,19 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:drawablePadding="10dp"
+                        android:id="@+id/PhoneET"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
+                        android:autofillHints="030046745638"
+                        android:drawableStart="@drawable/ic_phone_book"
                         android:drawableLeft="@drawable/ic_phone_book"
+                        android:drawablePadding="10dp"
                         android:hint="@string/contact_number"
                         android:inputType="number"
-                        android:textColor="#45b55c"
-                        android:drawableStart="@drawable/ic_phone_book"
-                        android:autofillHints="030046745638" />
+                        android:textColor="#45b55c" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -164,33 +170,42 @@
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:drawablePadding="10dp"
+                        android:id="@+id/AddressET"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/ic_agenda"
-                        android:hint="@string/address"
-                        android:inputType="text"
+                        android:autofillHints="Sargodha"
                         android:drawableStart="@drawable/ic_agenda"
-                        android:autofillHints="Sargodha" />
+                        android:drawableLeft="@drawable/ic_agenda"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/address"
+                        android:inputType="text" />
 
                 </android.support.design.widget.TextInputLayout>
-
+                <com.victor.loading.rotate.RotateLoading
+                    android:id="@+id/rotateloading"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:loading_width="5dp"
+                    app:loading_color="#4CAF50"
+                    android:layout_centerInParent="true"/>
                 <Button
-                    android:padding="10dp"
+                    android:id="@+id/RegsiterBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/button_back"
+                    android:padding="10dp"
                     android:text="@string/register"
                     android:textAllCaps="false"
                     android:textColor="#ffffff"
-                    android:textSize="18dp"
-                     />
+                    android:textSize="18dp" />
             </LinearLayout>
         </ScrollView>
 
