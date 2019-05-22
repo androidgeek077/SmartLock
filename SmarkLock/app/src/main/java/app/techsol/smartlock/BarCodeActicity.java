@@ -31,7 +31,7 @@ public class BarCodeActicity extends AppCompatActivity {
 
 
     private EditText mEdtTxtCategory;
-    private CardView mCVAddCategory;
+    private Button mCVAddCategory;
     StorageReference profilePicRef;
 
     private String mStrCatTitle;
@@ -84,14 +84,10 @@ LinearLayout view;
                 if(mStrCatTitle.isEmpty()){
                     mEdtTxtCategory.setError("Please Fill This Field");
                 }else{
-
                     profilePicRef = mProfilePicStorageReference.child(selectedProfileImageUri.getLastPathSegment());
                     profilePicRef.putFile(selectedProfileImageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                            Toast.makeText(BarCodeActicity.this, "image uploaded", Toast.LENGTH_SHORT).show();
-
                             profilePicRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
