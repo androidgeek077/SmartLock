@@ -13,4 +13,16 @@
     <string name="create_a_new_account">Create a New Account</string>
     <string name="dashes">_______________</string>
     <string name="or">OR</string>
+    <string name="title_activity_admin_bottom_nav">AdminBottomNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="waqas_ahmad">Waqas Ahmad</string>
+    <string name="_03004626618">03004626618</string>
+    <string name="waqas7788">waqas7788</string>
+    <string name="example_gmail_com">Example@gmail.com</string>
+    <string name="p_o_box_sargodha">P.O.Box Sargodha</string>
 </resources>

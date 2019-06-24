@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgd"
+    android:background="#ECECEC"
     android:orientation="vertical">
 
     <LinearLayout
@@ -60,6 +60,7 @@
                         android:text="select image" />
 
                     <ImageView
+                        android:layout_marginBottom="50dp"
                         android:id="@+id/selected_img_vw_cat"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
