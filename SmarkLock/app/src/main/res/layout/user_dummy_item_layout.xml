@@ -36,15 +36,15 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.5"
+                        android:drawableStart="@drawable/ic_identification"
                         android:drawableLeft="@drawable/ic_identification"
                         android:drawablePadding="10dp"
-                        android:fontFamily="sans-serif-thin"
-                        android:padding="16dp"
                         android:ellipsize="end"
+                        android:fontFamily="sans-serif-thin"
                         android:maxLines="1"
+                        android:padding="16dp"
                         android:text="@string/waqas_ahmad"
-                        android:textStyle="bold"
-                        android:drawableStart="@drawable/ic_identification" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/UserPhoneTV"
@@ -54,10 +54,10 @@
                         android:layout_weight="0.5"
                         android:drawableLeft="@drawable/ic_phone_symbol_of_an_auricular_inside_a_circle"
                         android:drawablePadding="10dp"
-                        android:fontFamily="sans-serif-thin"
-                        android:padding="16dp"
                         android:ellipsize="end"
+                        android:fontFamily="sans-serif-thin"
                         android:maxLines="1"
+                        android:padding="16dp"
                         android:text="@string/_03004626618"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -80,13 +80,13 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight=".5"
+                        android:drawableStart="@drawable/ic_envelope"
                         android:drawableLeft="@drawable/ic_envelope"
                         android:drawablePadding="10dp"
                         android:ellipsize="end"
                         android:maxLines="1"
                         android:padding="16dp"
-                        android:text="@string/example_gmail_com"
-                        android:drawableStart="@drawable/ic_envelope" />
+                        android:text="@string/example_gmail_com" />
 
                     <TextView
                         android:id="@+id/ProductKeyTV"
@@ -95,13 +95,13 @@
                         android:layout_height="match_parent"
                         android:layout_gravity="end"
                         android:layout_weight=".5"
+                        android:drawableStart="@drawable/ic_key"
                         android:drawableLeft="@drawable/ic_key"
                         android:drawablePadding="10dp"
-                        android:padding="16dp"
                         android:ellipsize="end"
                         android:maxLines="1"
-                        android:text="@string/waqas7788"
-                        android:drawableStart="@drawable/ic_key" />
+                        android:padding="16dp"
+                        android:text="@string/waqas7788" />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -116,13 +116,23 @@
                     android:id="@+id/AddressTV"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:drawableStart="@drawable/ic_address"
                     android:drawableLeft="@drawable/ic_address"
                     android:drawablePadding="10dp"
                     android:gravity="center_vertical"
+                    android:paddingStart="20dp"
                     android:paddingLeft="20dp"
-                    android:text="@string/p_o_box_sargodha"
-                    android:drawableStart="@drawable/ic_address"
-                    android:paddingStart="20dp" />
+                    android:text="@string/p_o_box_sargodha" />
+
+                <ImageView
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/DeleteImgVw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    app:srcCompat="@drawable/ic_rubbish_bin_delete_button"
+                    android:layout_marginRight="10dp" />
             </android.support.v7.widget.CardView>
 
         </LinearLayout>

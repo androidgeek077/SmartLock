@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/AddProduct"
         android:icon="@drawable/ic_plus"
         android:title="Add Product" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/ViewProduct"
         android:icon="@drawable/lock"
         android:title="View Products" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/ViewUsers"
         android:icon="@drawable/ic_userlogo"
         android:title="View Users" />
 

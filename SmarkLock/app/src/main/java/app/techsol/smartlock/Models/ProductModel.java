@@ -1,7 +1,7 @@
 package app.techsol.smartlock.Models;
 
-public class uploadProduct {
-    public uploadProduct(String productkey, String imgurl) {
+public class ProductModel {
+    public ProductModel(String productkey, String imgurl) {
         this.productkey = productkey;
         this.imgurl = imgurl;
     }
@@ -22,7 +22,7 @@ public class uploadProduct {
         this.imgurl = imgurl;
     }
 
-    public uploadProduct() {
+    public ProductModel() {
     }
 
     String productkey,imgurl;

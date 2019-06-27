@@ -1,10 +1,10 @@
+
 package app.techsol.smartlock.Models;
 
-public class UserModel {
+public class AdminModel {
 
     String name;
     String email;
-    String productkey;
     String phone;
 
     public String getName() {
@@ -23,13 +23,8 @@ public class UserModel {
         this.email = email;
     }
 
-    public String getProductkey() {
-        return productkey;
-    }
 
-    public void setProductkey(String productkey) {
-        this.productkey = productkey;
-    }
+
 
     public String getPhone() {
         return phone;
@@ -49,15 +44,14 @@ public class UserModel {
 
     String address;
 
-    public UserModel(String name, String email, String productkey, String phone, String address) {
+    public AdminModel(String name, String email, String phone, String address) {
         this.name = name;
         this.email = email;
-        this.productkey = productkey;
         this.phone = phone;
         this.address = address;
     }
 
-    public UserModel() {
+    public AdminModel() {
     }
 
 }

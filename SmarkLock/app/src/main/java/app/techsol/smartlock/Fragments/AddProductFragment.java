@@ -71,7 +71,7 @@ public class AddProductFragment extends Fragment {
 
         LLview=view.findViewById(R.id.getView);
         firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("Categories");
+        databaseReference = firebaseDatabase.getReference("Products");
         mProfilePicStorageReference = FirebaseStorage.getInstance().getReference().child("pictures");
         auth=FirebaseAuth.getInstance();
 

@@ -22,20 +22,42 @@
             android:orientation="vertical"
             android:layout_weight="0.7"
             android:layout_width="0dp"
+            android:weightSum="1"
             android:layout_height="match_parent">
             <android.support.v7.widget.CardView
                 app:cardElevation="1dp"
-                android:layout_gravity="center"
+                android:layout_weight="0.5"
                 android:layout_margin="1dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="0dp">
                 <TextView
-                    android:drawableRight="@drawable/ic_key_icon"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/ic_key_icon"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
-                    android:gravity="center_vertical"
                     android:text="Sumbal"
                     android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                app:cardElevation="1dp"
+                android:layout_weight="0.5"
+                android:layout_margin="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <Button
+                    android:textAllCaps="false"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="Delete"
+                    android:textAlignment="center"
+                    android:id="@+id/DeleteBtn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
 

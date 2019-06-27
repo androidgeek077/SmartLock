@@ -25,4 +25,14 @@
     <string name="waqas7788">waqas7788</string>
     <string name="example_gmail_com">Example@gmail.com</string>
     <string name="p_o_box_sargodha">P.O.Box Sargodha</string>
+
+    <string-array name="type_string">
+
+        <item>Barcode</item>
+        <item>PDF 417</item>
+        <item>Barcode-39</item>
+        <item>Barcode-93</item>
+    </string-array>
+    <string name="type_prompt">Select Type</string>
+
 </resources>

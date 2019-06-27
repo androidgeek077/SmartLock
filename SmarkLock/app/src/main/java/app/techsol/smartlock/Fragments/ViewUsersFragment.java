@@ -52,7 +52,7 @@ public class ViewUsersFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_view_products, container, false);
+        View view = inflater.inflate(R.layout.fragment_view_users, container, false);
 
         getActivity().setTitle("Users");
 
@@ -92,6 +92,13 @@ public class ViewUsersFragment extends Fragment {
                 holder.mProductKey.setText(model.getProductkey());
                 holder.mAddress.setText(model.getAddress());
 
+                holder.mDelCustomerBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        DatabaseReference key= getRef(position);
+                        key.removeValue();
+                    }
+                });
 
 //                holder.mMinusBtn.setOnClickListener(new View.OnClickListener() {
 //                    @Override
@@ -127,7 +134,8 @@ public class ViewUsersFragment extends Fragment {
     public static class CustomersViewHolder extends RecyclerView.ViewHolder {
 
 
-        ImageView postImage;
+        ImageView mDelCustomerBtn;
+
         TextView mName, mPhone, mEmail, mProductKey, mAddress;
 
 
@@ -139,6 +147,8 @@ public class ViewUsersFragment extends Fragment {
             mEmail = itemView.findViewById(R.id.EmailTV);
             mProductKey = itemView.findViewById(R.id.ProductKeyTV);
             mAddress = itemView.findViewById(R.id.AddressTV);
+            mDelCustomerBtn=itemView.findViewById(R.id.DeleteImgVw);
+
 
         }
     }

@@ -35,15 +35,12 @@ public class ViewProductsFragment extends Fragment {
 
 
 //    int images[] = {R.drawable.image1, R.drawable.image2, R.drawable.image3, R.drawable.image4};
-    private ViewFlipper simpleViewFlipper;
     private ArrayList<String> mCategories = new ArrayList<>();
 
 
-    int countInt, incrementalCount;
     DatabaseReference CustomerReference;
 //    CustomerProfileAdapter mProductAdapter;
     RecyclerView mCustomerRecycVw;
-    String count;
 
     public ViewProductsFragment() {
         // Required empty public constructor
@@ -84,21 +81,18 @@ public class ViewProductsFragment extends Fragment {
                 (getActivity()).getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
                 //if you need three fix imageview in width
 
-                holder.postTitle.setText(model.getProductkey());
+                holder.ProductKey.setText(model.getProductkey());
 
-                Glide.with(getActivity().getApplicationContext()).load(model.getImgurl()).into(holder.postImage);
+                Glide.with(getActivity().getApplicationContext()).load(model.getImgurl()).into(holder.BarCodeImage);
 
+                holder.mDelCustomerBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        DatabaseReference key= getRef(position);
+                        key.removeValue();
+                    }
+                });
 
-//                holder.mMinusBtn.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        count=holder.mTotalCount.getText().toString();
-//                        countInt=Integer.parseInt(count);
-//                        incrementalCount=countInt--;
-//
-//                        holder.mTotalCount.setText(countInt+"");
-//                    }
-//                });
 
 
             }
@@ -122,15 +116,19 @@ public class ViewProductsFragment extends Fragment {
     public static class CustomersViewHolder extends RecyclerView.ViewHolder {
 
 
-        ImageView postImage;
-        TextView postTitle;
+        ImageView BarCodeImage;
+        TextView ProductKey;
+        Button mDelCustomerBtn;
+
 
 
         public CustomersViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            postImage = (ImageView) itemView.findViewById(R.id.UserImage);
-            postTitle = (TextView) itemView.findViewById(R.id.userName);
+            BarCodeImage = (ImageView) itemView.findViewById(R.id.UserImage);
+            ProductKey = (TextView) itemView.findViewById(R.id.userName);
+            mDelCustomerBtn=itemView.findViewById(R.id.DeleteBtn);
+
 
         }
     }

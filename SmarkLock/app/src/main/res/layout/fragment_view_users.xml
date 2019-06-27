@@ -6,25 +6,32 @@
     android:background="#fff"
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:orientation="vertical"
         android:id="@+id/customer_content_main"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context=".Cusmoter.CustomerNavDrawerActivity"
         >
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/rotateloading"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:loading_width="5dp"
+            app:loading_color="#4CAF50" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/main_recycler_vw"
             android:numColumns="auto_fit"
+            android:layout_marginBottom="50dp"
             android:stretchMode="columnWidth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         </android.support.v7.widget.RecyclerView>
 
-    </LinearLayout>
+    </FrameLayout>
 </ScrollView>

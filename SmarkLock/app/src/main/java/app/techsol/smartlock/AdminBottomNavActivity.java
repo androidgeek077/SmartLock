@@ -32,13 +32,13 @@ public class AdminBottomNavActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.AddProduct:
                     FragmentLoadinManagerWithBackStack(new AddProductFragment());
                 return true;
-                case R.id.navigation_dashboard:
+                case R.id.ViewProduct:
                     FragmentLoadinManagerWithBackStack(new ViewProductsFragment());
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.ViewUsers:
                     FragmentLoadinManagerWithBackStack(new ViewUsersFragment());
                     return true;
             }

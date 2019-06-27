@@ -35,6 +35,7 @@
                     android:text="Add Product"
                     android:textSize="20sp" />
 
+
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/til_cat_title"
                     android:layout_width="match_parent"
@@ -46,21 +47,24 @@
                     app:errorEnabled="true">
 
                     <EditText
-                        android:id="@+id/et_cat_title"
+                        android:id="@+id/edittext1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Product Key"
                         android:inputType="textAutoComplete" />
 
-                    <Button
-                        android:id="@+id/select_iamge_btn_cat"
+                    <Spinner
+                        android:id="@+id/type_spinner"
+                        android:entries="@array/type_string"
+                        android:prompt="@string/type_prompt"
+                        android:spinnerMode="dialog"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/et_cat_title"
                         android:text="select image" />
 
                     <ImageView
-                        android:id="@+id/selected_img_vw_cat"
+                        android:id="@+id/image_imageview"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:layout_below="@+id/select_iamge_btn_cat"
@@ -69,7 +73,7 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <com.victor.loading.rotate.RotateLoading
-                    android:layout_above="@+id/cv_add_category_btn"
+                    android:layout_above="@+id/generate_button"
                     android:id="@+id/rotateloading"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -79,7 +83,7 @@
                     app:loading_width="5dp" />
 
                 <Button
-                    android:id="@+id/cv_add_category_btn"
+                    android:id="@+id/generate_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/til_cat_title"
